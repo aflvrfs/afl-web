@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "SHK Pro",
+    "slug": "shk-pro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "de.shkpro.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "SHK Pro verwendet die Kamera, um Fotos zu Aufträgen aufzunehmen.",
+        "NSPhotoLibraryUsageDescription": "SHK Pro greift auf Ihre Fotos zu, um sie Aufträgen hinzuzufügen.",
+        "NSFaceIDUsageDescription": "SHK Pro verwendet Face ID, um Ihre Kunden- und Auftragsdaten zu schützen."
+      }
+    },
+    "plugins": [
+      ["expo-image-picker", { "photosPermission": "SHK Pro greift auf Ihre Fotos zu, um sie Aufträgen hinzuzufügen.", "cameraPermission": "SHK Pro verwendet die Kamera, um Fotos zu Aufträgen aufzunehmen." }],
+      ["expo-local-authentication", { "faceIDPermission": "SHK Pro verwendet Face ID, um Ihre Kunden- und Auftragsdaten zu schützen." }]
+    ]
+  }
+}
